@@ -30,6 +30,29 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
+# initial setting
+# INSTALLED_APPS = [
+#     'django.contrib.admin',
+#     'django.contrib.auth',
+#     'django.contrib.contenttypes',
+#     'django.contrib.sessions',
+#     'django.contrib.messages',
+#     'django.contrib.staticfiles',
+# ]
+
+# add database model 
+# INSTALLED_APPS = [
+#     'django.contrib.admin',
+#     'django.contrib.auth',
+#     'django.contrib.contenttypes',
+#     'django.contrib.sessions',
+#     'django.contrib.messages',
+#     'django.contrib.staticfiles',
+#     # apps
+#     'apps.endpoints'
+# ]
+
+# add Django REST Framework
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -37,6 +60,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework', # add django rest framework
+    # apps
+    'apps.endpoints'
 ]
 
 MIDDLEWARE = [
